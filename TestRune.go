@@ -37,4 +37,16 @@ func main(){
 		fmt.Printf("%c", v)		
 		fmt.Printf("%T", v)		
 	}
+	
+	fmt.Println("")
+	
+	for i, r  :=  range cStr{
+		fmt.Printf("%d: %q\n", i, r)	
+	}
+	
+	fmt.Println("")
+	
+	for i, r  :=  range []rune(cStr){
+		fmt.Printf("%d: %q\n", i, r)	
+	}
 }
