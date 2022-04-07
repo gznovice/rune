@@ -10,6 +10,7 @@ func main(){
 	
 	for i := 0; i < len(eStr); i++{
 		fmt.Printf("%c", eStr[i])		
+		fmt.Printf("%T", eStr[i])	
 	}
 	fmt.Println("")
 	fmt.Println("len(eStr):", len(eStr))
@@ -18,6 +19,7 @@ func main(){
 	
 	for i := 0; i < len(cStr); i++{
 		fmt.Printf("%c", cStr[i])		
+		fmt.Printf("%T", cStr[i])	
 	}
 	fmt.Println("")
 	fmt.Println("len(cStr):", len(cStr))
@@ -26,7 +28,7 @@ func main(){
 	
 	for _, v :=  range eStr{
 		fmt.Printf("%c", v)		
-		fmt.Printf("%T", v)		
+		fmt.Printf("%T", v)
 	}
 	
 	fmt.Println("")
